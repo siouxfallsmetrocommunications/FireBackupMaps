@@ -2,13 +2,10 @@
 Fire Backup Maps
 
 function initMap() {
+  // Create a map object and specify the DOM element for display.
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 11,
-    center: {lat: 41.876, lng: -87.624}
-  });
-
-  var ctaLayer = new google.maps.KmlLayer({
-    url: 'http://googlemaps.github.io/js-v2-samples/ggeoxml/cta.kml',
-    map: map
+    center: {lat: -34.397, lng: 150.644},
+    scrollwheel: false,
+    zoom: 8
   });
 }
